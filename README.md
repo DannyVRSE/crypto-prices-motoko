@@ -1,6 +1,8 @@
-This Internet Computer DAPP gets the crypto price from coinbase free API between a range of dates
+## This Internet Computer dApp gets the crypto price from Coinbase API between a range of dates ##
 
-The API response looks like this:
+The output looks like this:
+
+```
  [
      [
          1682978460, <-- start timestamp
@@ -12,21 +14,26 @@ The API response looks like this:
      ],
  ]
 
-Tech stack: Motoko
+```
 
-INSTALLATION:
+## Tech stack
+Motoko
+
+## Installation
 
 dfx setup: https://docs.google.com/document/d/e/2PACX-1vTNicu-xuf4EiLAehHIqgfpjAnPjzqMGT-xpZVvYaAWNyvzYK_Ceve_me4PVRIxpzH7ea5PAX9NxGwY/pub
 
-RUN
 $dfx start --clean --background
+
 $dfx deploy
 
-USAGE
+## Usage
 startdate:Nat64 (unix timestamp )
+
 end date:Nat64  (unix timestamp )
+
 pair:Text (e.g ICP-USD)
 
-USEFUL
+## Useful
 
 unix timestamp converter https://www.unixtimestamp.com/
